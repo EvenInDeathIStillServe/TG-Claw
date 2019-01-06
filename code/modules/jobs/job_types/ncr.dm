@@ -11,7 +11,7 @@ Colonel
 	supervisors = "the general"
 	selection_color = "#ffeeaa"
 	req_admin_notify = 1
-	exp_requirements = 45
+	exp_requirements = 2700
 	exp_type = EXP_TYPE_NCR
 
 	outfit = /datum/outfit/job/f13colonel
@@ -37,8 +37,7 @@ Captain
 	supervisors = "the colonel"
 	selection_color = "#ffeeaa"
 	req_admin_notify = 1
-	minimal_player_age = 6
-	exp_requirements = 30
+	exp_requirements = 1560
 	exp_type = EXP_TYPE_NCR
 
 	outfit = /datum/outfit/job/f13captain
@@ -79,7 +78,7 @@ Lieutenant
 	spawn_positions = 1
 	supervisors = "the captain"
 	selection_color = "#fff5cc"
-	exp_requirements = 20
+	exp_requirements = 1200
 	exp_type = EXP_TYPE_NCR
 
 	outfit = /datum/outfit/job/f13lieutenant
@@ -121,7 +120,7 @@ Sergeant
 	spawn_positions = 2
 	supervisors = "the lieutenant"
 	selection_color = "#fff5cc"
-	exp_requirements = 5
+	exp_requirements = 600
 	exp_type = EXP_TYPE_NCR
 
 	outfit = /datum/outfit/job/f13sergeant
@@ -197,8 +196,8 @@ Recruit
 	flag = F13RECRUIT
 	department_flag = NCR
 	faction = "NCR"
-	total_positions = -1
-	spawn_positions = -1
+	total_positions = 12
+	spawn_positions = 12
 	supervisors = "sergeants"
 	selection_color = "#fff5cc"
 
@@ -240,8 +239,7 @@ Veteran Ranger
 	spawn_positions = 1
 	supervisors = "the lieutenant"
 	selection_color = "#ffeeaa"
-	minimal_player_age = 2
-	exp_requirements = 25
+	exp_requirements = 1500
 	exp_type = EXP_TYPE_NCR
 
 	outfit = /datum/outfit/job/f13vetranger
@@ -281,7 +279,7 @@ Ranger
 	spawn_positions = 2
 	supervisors = "the veteran ranger"
 	selection_color = "#fff5cc"
-	exp_requirements = 12
+	exp_requirements = 720
 	exp_type = EXP_TYPE_NCR
 
 	outfit = /datum/outfit/job/f13ranger
@@ -324,7 +322,7 @@ Recon Ranger
 	spawn_positions = 3
 	supervisors = "the veteran ranger"
 	selection_color = "#fff5cc"
-	exp_requirements = 7
+	exp_requirements = 420
 	exp_type = EXP_TYPE_NCR
 
 	outfit = /datum/outfit/job/f13recranger

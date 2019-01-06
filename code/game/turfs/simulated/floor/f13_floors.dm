@@ -14,6 +14,8 @@
 	light_range = 3
 	light_power = 0.75
 
+
+
 /turf/open/floor/plating/f13 // don't use this for anything, /f13/ is essentially just the new /unsimulated/ but for planets and should probably be phased out entirely everywhere
 	gender = PLURAL
 	baseturfs = /turf/open/floor/plating/f13
@@ -47,18 +49,19 @@
 	name = "\proper desert"
 	desc = "A stretch of desert."
 	icon = 'icons/turf/f13desert.dmi'
+	icon_state = "wasteland1"
+
+	archdrops = list(/obj/item/stack/ore/glass = list(ARCH_PROB = 100,ARCH_MAXDROP = 5)) //sand
 	var/obj/structure/flora/turfPlant = null
-	//light_color = LIGHT_COLOR_LAVA
 	slowdown = 2
-	//PIT
-	//var/turf_type = /turf/ground/desert
-	//var/dug = 0
-	//var/storedindex = 0
-	//var/mob/living/gravebody
-	//var/obj/structure/closet/coffin/gravecoffin
-	//var/pitcontents = list()
-	//var/obj/dugpit/ground/mypit
-	//var/unburylevel = 0
+	var/dug = 0       //0 = has not yet been dug, 1 = has already been dug
+	var/pit_sand = 2
+	var/storedindex = 0 //amount of stored items
+	var/mob/living/gravebody //is there a body in the pit?
+	var/obj/structure/closet/crate/coffin/gravecoffin //or maybe a coffin?
+	var/pitcontents = list()
+	var/obj/dugpit/mypit
+	var/unburylevel = 0
 
 /turf/open/floor/plating/f13/outside/desert/Initialize()
 	. = ..()
